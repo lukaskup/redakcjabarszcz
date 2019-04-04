@@ -35,7 +35,7 @@ class NavBar extends Component {
             <div className={"menuDrawer" + (this.state.isMenuDrawerOpen ? "" : " hidden")}>
                 <div className="row drawerItem" onClick={() => this.toggleMenuDrawer()}>
                     <div className="col-12">
-                        <i class="material-icons">
+                        <i className="material-icons">
                             arrow_back
                         </i>
                     </div>

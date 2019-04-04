@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.0.3",
+    "prismic-reactjs": "^0.3.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
