@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Article from "./Article";
 import Prismic from 'prismic-javascript';
-import {Link, RichText, Date} from 'prismic-reactjs';
+import Loader from "./Loader";
 
 class Articles extends Component {
 
@@ -12,13 +12,12 @@ class Articles extends Component {
             isLoading: true
         }
     }
-
     	
     componentWillMount() {
         const apiEndpoint = 'https://barszczredakcja.prismic.io/api/v2';
         
         Prismic.api(apiEndpoint).then(api => {
-            api.query(Prismic.Predicates.at('document.type', 'article', {'fetchLinks': 'author.name'})).then(response => {
+            api.query(Prismic.Predicates.at('document.type', 'article'), {'fetchLinks': 'author.name'}).then(response => {
                 if (response) {
                     this.setState({isLoading: false})
                     this.setState({ doc: response.results });
@@ -29,8 +28,8 @@ class Articles extends Component {
 
     render() {
 
-        let articles = this.state.isLoading ? <span>loading...</span> : this.state.doc.map((value) => {
-            return <Article article={value} />
+        let articles = this.state.isLoading ? <Loader /> : this.state.doc.map((value) => {
+            return <Article article={value} key={value.id}/>
         })
 
         return (
