@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import "./../css/Article.scss";
 class Article extends Component {
-  render() {console.log(this.props.article)
+  render() {console.log(this.props.article.uid)
     return (
-      <div className="article row m-0" key={this.props.article.uid} onClick={() => {this.props.history.push("/artykul/" + this.props.article.slug[0])}}>
+      <div className="article row m-0" key={this.props.article.uid} onClick={() => {this.props.history.push("/artykul/" + this.props.article.uid)}}>
         <div className="col-12 p-0">
             <span className="imageSource">{this.props.article.data.image_source[0].text}</span>
         </div>

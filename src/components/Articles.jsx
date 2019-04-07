@@ -19,6 +19,7 @@ class Articles extends Component {
         Prismic.api(apiEndpoint).then(api => {
             api.query(Prismic.Predicates.at('document.type', 'article'), {'fetchLinks': 'author.name'}).then(response => {
                 if (response) {
+                    console.log(this);
                     this.setState({isLoading: false})
                     this.setState({ doc: response.results });
                 }

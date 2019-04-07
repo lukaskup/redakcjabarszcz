@@ -1,0 +1,69 @@
+.articleView{
+    .imageSource{
+        font-size: 10px;
+        float: right;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        color: #8c8c8c;
+    }
+
+    .author-img{
+        border-radius: 50px;
+        height: 26px;
+        position: absolute;
+        top: 0px;
+    }
+
+    .author{
+        font-size: 12px;
+        font-weight: 600;
+        color: #4a4a4a;
+        margin-left: 30px;
+    }
+
+    .date{
+        font-size: 11px;
+        font-weight: 600;
+        color: #ababab;
+        margin-left: 7px;
+        margin-top: 1px;
+    }
+
+    .article-img{
+        width: 100%;
+    }
+
+    .content{
+        p{
+            font-size: 13px;
+            line-height: 22px;
+            text-indent: 20px;
+            width: 100%;
+        }
+
+        .block-img{
+            text-indent: 0;
+            width:100%;
+            img{
+                width:100%;
+            }
+        }
+
+        ol,ul{
+            padding-left: 18px;
+            font-size:13px;
+        }
+
+        iframe{
+            width: 100%;
+        }
+
+        em{
+            display: block;
+        }
+
+        strong{
+            display: block;
+        }
+    }
+}

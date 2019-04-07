@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from "./components/NavBar";
 import Articles from "./components/Articles";
+import ArticleView from "./components/ArticleView";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
@@ -18,6 +19,7 @@ class App extends Component {
               <Route exact path="/" component={Articles} />
               <Route exact path="/o-nas" component={About} />
               <Route exact path="/kontakt" component={Contact} />
+              <Route exact path="/artykul/:uid" component={ArticleView} />
             </div>
         </Router>
       </div>
