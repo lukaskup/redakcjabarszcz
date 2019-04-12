@@ -4,16 +4,13 @@ import Articles from "./components/Articles";
 import ArticleView from "./components/ArticleView";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { HashRouter, Route } from "react-router-dom";
 
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
+        <HashRouter>
           <NavBar />
             <div className="container p-0">
               <Route exact path="/" component={Articles} />
@@ -21,7 +18,7 @@ class App extends Component {
               <Route exact path="/kontakt" component={Contact} />
               <Route exact path="/artykul/:uid" component={ArticleView} />
             </div>
-        </Router>
+        </HashRouter>
       </div>
     );
   }

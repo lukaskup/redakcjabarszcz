@@ -32,7 +32,7 @@ class ArticleView extends Component {
                 <h1>{this.state.doc.data.title[0].text}</h1>
             </div>
             <div className="col-12 p-0">
-                <img className="author-img" src={this.state.doc.data.author.data.image.mobile.url} />
+                <img className="author-img" src={this.state.doc.data.author.data.image.mobile.url} alt={this.state.doc.data.author.data.image.mobile.alt}/>
                 <span className="author">{this.state.doc.data.author.data.name[0].text}</span>
                 <span className="date">{new Date(this.state.doc.last_publication_date).toLocaleDateString()}</span>
             </div>

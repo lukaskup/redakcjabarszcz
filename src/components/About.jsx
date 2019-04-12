@@ -48,13 +48,10 @@ class About extends Component {
             <h1>Kilka słów o redakcji</h1>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+          Barszcz został stworzony przez dwie klasy humanistyczne. Inicjatywę kultywowania tradycji gazetki szkolnej w Królówce zaproponowała pani Małgorzata Kotarska. Mamy nadzieje, ze społeczność naszego liceum aktywnie włączy się w tworzenie „Barszczu” oraz że wszystkie osoby zainteresowane dziennikarstwem, ogolnie pojętym pisaniem oraz sztuka znajdą u nas swoje spokojne  miejsce, w którym rozwinął swoją pasję
           </p>
         </div>
-        <div clasName="col-12 p-0 authorsList">
+        <div className="col-12 p-0 authorsList">
           <div className="heading">
             <h1>Autorzy</h1>
           </div>

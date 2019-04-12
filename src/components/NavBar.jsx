@@ -45,12 +45,12 @@ class NavBar extends Component {
                         <a href="/" onClick={(e) => {e.preventDefault()}}>Strona główna</a>
                     </div>
                 </div>
-                <div className="row drawerItem m-0" onClick={() => this.handleLinkClick("o-nas")}>
+                <div className="row drawerItem m-0" onClick={() => this.handleLinkClick("/o-nas")}>
                     <div className="col-12">
                         <a href="/o-nas" onClick={(e) => {e.preventDefault()}}>O nas</a>
                     </div>
                 </div>
-                <div className="row drawerItem m-0" onClick={() => this.handleLinkClick("kontakt")}>
+                <div className="row drawerItem m-0" onClick={() => this.handleLinkClick("/kontakt")}>
                     <div className="col-12">
                         <a href="/kontakt" onClick={(e) => {e.preventDefault()}}>Kontakt</a>
                     </div>

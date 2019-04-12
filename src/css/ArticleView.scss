@@ -1,10 +1,11 @@
 .articleView{
     .imageSource{
         font-size: 10px;
-        float: right;
+        float: left;
         margin-right: 2px;
         margin-bottom: 2px;
         color: #8c8c8c;
+        margin-top: 9px;
     }
 
     .author-img{
@@ -37,7 +38,6 @@
         p{
             font-size: 13px;
             line-height: 22px;
-            text-indent: 20px;
             width: 100%;
         }
 
