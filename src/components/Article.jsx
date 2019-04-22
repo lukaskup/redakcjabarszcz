@@ -47,9 +47,9 @@ class Article extends Component {
                   <span className="title">{this.props.article.data.title[0] ? this.props.article.data.title[0].text : ""}</span>
                 </div>
                 <div className="col-12 p-0">
-                  <p className="description">{this.props.article.data.content[0] ? (this.props.article.data.content[0].text.length >
-                    150 ? (this.props.article.data.content[0].text.substr(0, 110) + "...") :
-                    this.props.article.data.content[0].text) : ""}</p>
+                  <p className="description">{this.props.article.data.desc[0] ? 
+                  (this.props.article.data.desc[0].text.length > 150 ? this.props.article.data.desc[0].text.slice(0, 147) + "..." : this.props.article.data.desc[0].text) :
+                  (this.props.article.data.content[0].text.length > 150 ? this.props.article.data.content[0].text.slice(0, 147) + "..." : this.props.article.data.content[0].text)}</p>
                 </div>
             </div>
             <div className="col-4 p-0">

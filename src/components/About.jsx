@@ -21,7 +21,6 @@ class About extends Component {
               if (response) {
                   this.setState({isLoading: false})
                   this.setState({ authors: response.results });
-                  console.log(this.state.authors);
               }
           });
       });
